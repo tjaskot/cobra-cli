@@ -5,10 +5,10 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-    "os"
+	"os"
 	"fmt"
 	"log"
-    "bufio"
+	"bufio"
 	"github.com/spf13/cobra"
 )
 
@@ -51,9 +51,9 @@ This will call local database and obtain what information has been instantiated.
 func init() {
 	rootCmd.AddCommand(userTeleCmd)
 	// Here you will define your flags and configuration settings.
-    userTeleCmd.PersistentFlags().StringP("placeholder", "p", "", "A placeholder for input user telephone number.")
-    userTeleCmd.PersistentFlags().StringP("name", "n", "", "Telephone user's name.")
-    userTeleCmd.PersistentFlags().StringP("tele", "t", "", "User's telephone number.")
+       userTeleCmd.PersistentFlags().StringP("placeholder", "p", "", "A placeholder for input user telephone number.")
+       userTeleCmd.PersistentFlags().StringP("name", "n", "", "Telephone user's name.")
+       userTeleCmd.PersistentFlags().StringP("tele", "t", "", "User's telephone number.")
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
 	// userTeleCmd.PersistentFlags().String("foo", "", "A help for foo")
