@@ -24,7 +24,7 @@ func init() {
 	rootCmd.AddCommand(delTeleNumCmd)
 
 	// Here you will define your flags and configuration settings.
-
+        updateTeleNumCmd.PersistentFlags().StringP("delete", "d", "", "A short hand delete parameter.")
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
 	// delTeleNumCmd.PersistentFlags().String("foo", "", "A help for foo")
