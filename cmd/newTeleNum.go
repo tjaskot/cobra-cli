@@ -24,7 +24,7 @@ var newTeleNumCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(newTeleNumCmd)
 	// Here you will define your flags and configuration settings.
-    newTeleNumCmd.PersistentFlags().String("placeholder", "1234567890", "A placeholder for user telephone number.")
+        updateTeleNumCmd.PersistentFlags().StringP("placeholder", "p", "1234567890", "A short hand and default placeholder for user telephone number.")
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
 	// newTeleNumCmd.PersistentFlags().String("foo", "", "A help for foo")
